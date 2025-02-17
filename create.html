@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Nova Enquete</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="corpo">
+    <header class="cabecalho">
+      <h1 class="inpttitle">Criar nova enquete</h1>
+      <a href="./enquetes.html" class="btnvoltar">🠔 Voltar</a>
+    </header>
+
+    <form action="#" class="formu" id="myForm">
+      <label for="name" class="labelname">Nome da enquete</label>
+      <input type="text" name="name" class="inptname" id="name" placeholder="Coloque o nome da enquete" required>
+
+      <label for="options" class="labelname">Opções</label>
+      <div id="options-container">
+        <input type="text" name="options_0" class="inptname" placeholder="Coloque uma opção" required>
+        <input type="text" name="options_1" class="inptname" placeholder="Coloque uma opção" required>
+        <input type="text" name="options_2" class="inptname" placeholder="Coloque uma opção" required>
+      </div>
+    </form>
+
+    <div class="inptdate">
+      <div class="dateini">
+        <p>Data inicial: </p>
+        <input type="date" id="startDate">
+      </div>
+
+      <div class="datefim">
+        <p>Data final: </p>
+        <input type="date" id="endDate">
+      </div>
+    </div>
+
+    <div class="btn">
+      <button type="button" class="btnadd" id="addOptionBtn">+ Adicionar opção</button>
+      <button class="btncreate" id="createPollBtn">Criar enquete</button>
+    </div>
+  </div>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>

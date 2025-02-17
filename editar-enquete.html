@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Enquete</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <div class="corpo">
+    <header class="cabecalho">
+      <h1 class="inpttitle">Editar Enquete</h1>
+      <a href="./enquetes.html" class="btnvoltar">🠔 Voltar</a>
+    </header>
+
+    <form id="editPollForm" class="formu">
+      <label for="name" class="labelname">Nome da enquete</label>
+      <input type="text" name="name" class="inptname" id="pollName" placeholder="Coloque o nome da enquete" required>
+
+      <label for="options" class="labelname">Opções</label>
+      <div id="optionsContainer"></div>
+
+      <div class="inptdate">
+        <div class="dateini">
+          <p>Data inicial: </p>
+          <input type="date" id="startDate" required>
+        </div>
+
+        <div class="datefim">
+          <p>Data final: </p>
+          <input type="date" id="endDate" required>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button type="button" class="btnadd" id="addOptionBtn">+ Adicionar opção</button>
+        <button type="submit" class="btncreate" id="savePollBtn">Salvar alterações</button>
+      </div>
+    </form>
+  </div>
+
+  <input type="hidden" id="pollId" value="">
+
+
+  <script src="./script/editar.js"></script>
+</body>
+</html>
